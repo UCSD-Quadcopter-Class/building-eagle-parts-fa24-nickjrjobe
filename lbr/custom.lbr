@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -38,7 +38,7 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -111,10 +111,10 @@
 <smd name="G" x="-0.95" y="-1.25" dx="1" dy="1.5" layer="1" stop="no" cream="no"/>
 <smd name="S" x="0.95" y="-1.25" dx="1" dy="1.5" layer="1" stop="no" cream="no"/>
 <smd name="D" x="0" y="0.775" dx="2.9" dy="2.05" layer="1" stop="no" cream="no"/>
-<wire x1="-1.46" y1="0.55" x2="-1.46" y2="-0.75" width="0.1" layer="51"/>
-<wire x1="-1.46" y1="-0.75" x2="1.46" y2="-0.75" width="0.1" layer="51"/>
-<wire x1="1.46" y1="-0.75" x2="1.46" y2="0.55" width="0.1" layer="51"/>
-<wire x1="1.46" y1="0.55" x2="-1.46" y2="0.55" width="0.1" layer="51"/>
+<wire x1="-1.46" y1="0.55" x2="-1.46" y2="-0.75" width="0.1" layer="21"/>
+<wire x1="-1.46" y1="-0.75" x2="1.46" y2="-0.75" width="0.1" layer="21"/>
+<wire x1="1.46" y1="-0.75" x2="1.46" y2="0.55" width="0.1" layer="21"/>
+<wire x1="1.46" y1="0.55" x2="-1.46" y2="0.55" width="0.1" layer="21"/>
 <text x="0" y="2.3" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
 <wire x1="-2.4" y1="2.4" x2="-2.4" y2="-2.4" width="0.1" layer="39"/>
 <wire x1="-2.4" y1="-2.4" x2="2.4" y2="-2.4" width="0.1" layer="39"/>
@@ -123,35 +123,39 @@
 <rectangle x1="-0.2795" y1="0.523" x2="0.2795" y2="1.247" layer="29"/>
 <rectangle x1="-1.2295" y1="-1.4465" x2="-0.6705" y2="-0.7225" layer="29"/>
 <rectangle x1="0.6705" y1="-1.4465" x2="1.2295" y2="-0.7225" layer="29"/>
+<rectangle x1="-0.2795" y1="0.523" x2="0.2795" y2="1.247" layer="31"/>
+<rectangle x1="-1.2295" y1="-1.4465" x2="-0.6705" y2="-0.7225" layer="31"/>
+<rectangle x1="0.6705" y1="-1.4465" x2="1.2295" y2="-0.7225" layer="31"/>
+<rectangle x1="-4.2295" y1="-1.4465" x2="-3.6705" y2="-0.7225" layer="31"/>
 </package>
 <package name="IMU_LSM6DSO">
-<rectangle x1="-0.72" y1="-0.474" x2="0.72" y2="0.466" layer="41"/>
-<rectangle x1="-1.5" y1="-1.254" x2="1.5" y2="1.246" layer="42"/>
-<rectangle x1="-1.5" y1="-1.254" x2="1.5" y2="1.246" layer="43"/>
-<smd name="6" x="0" y="-0.8665" dx="0.35" dy="0.575" layer="1"/>
-<smd name="7" x="0.5" y="-0.8665" dx="0.35" dy="0.575" layer="1"/>
-<smd name="5" x="-0.5" y="-0.8665" dx="0.35" dy="0.575" layer="1"/>
-<smd name="4" x="-1.1125" y="-0.704" dx="0.35" dy="0.575" layer="1" rot="R90"/>
-<smd name="3" x="-1.1125" y="-0.204" dx="0.35" dy="0.575" layer="1" rot="R90"/>
-<smd name="2" x="-1.1125" y="0.296" dx="0.35" dy="0.575" layer="1" rot="R90"/>
-<smd name="1" x="-1.1125" y="0.796" dx="0.35" dy="0.575" layer="1" rot="R90"/>
-<smd name="8" x="1.1125" y="-0.704" dx="0.35" dy="0.575" layer="1" rot="R90"/>
-<smd name="9" x="1.1125" y="-0.204" dx="0.35" dy="0.575" layer="1" rot="R90"/>
-<smd name="10" x="1.1125" y="0.296" dx="0.35" dy="0.575" layer="1" rot="R90"/>
-<smd name="11" x="1.1125" y="0.796" dx="0.35" dy="0.575" layer="1" rot="R90"/>
-<smd name="13" x="0" y="0.8585" dx="0.35" dy="0.575" layer="1"/>
-<smd name="12" x="0.5" y="0.8585" dx="0.35" dy="0.575" layer="1"/>
-<smd name="14" x="-0.5" y="0.8585" dx="0.35" dy="0.575" layer="1"/>
-<text x="0" y="1.746" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
-<circle x="-1.778" y="1.032" radius="0.081021875" width="0.1524" layer="21"/>
-<wire x1="-1.5" y1="1.25" x2="-1.5" y2="-1.25" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="-1.25" x2="1.5" y2="-1.25" width="0.127" layer="21"/>
-<wire x1="1.5" y1="-1.25" x2="1.5" y2="1.25" width="0.127" layer="21"/>
-<wire x1="1.5" y1="1.25" x2="-1.5" y2="1.25" width="0.127" layer="21"/>
-<wire x1="-2.4" y1="1.9" x2="-2.4" y2="-1.9" width="0.127" layer="39"/>
-<wire x1="-2.4" y1="-1.9" x2="2.4" y2="-1.9" width="0.127" layer="39"/>
-<wire x1="2.4" y1="-1.9" x2="2.4" y2="1.9" width="0.127" layer="39"/>
-<wire x1="2.4" y1="1.9" x2="-2.4" y2="1.9" width="0.127" layer="39"/>
+<rectangle x1="-1.5" y1="-1.154" x2="1.5" y2="1.346" layer="42"/>
+<rectangle x1="-1.5" y1="-1.154" x2="1.5" y2="1.346" layer="43"/>
+<smd name="6" x="0" y="-0.7625" dx="0.35" dy="0.575" layer="1"/>
+<smd name="7" x="0.5" y="-0.7625" dx="0.35" dy="0.575" layer="1"/>
+<smd name="5" x="-0.5" y="-0.7625" dx="0.35" dy="0.575" layer="1"/>
+<smd name="4" x="-1.1125" y="-0.65" dx="0.35" dy="0.575" layer="1" rot="R90"/>
+<smd name="3" x="-1.1125" y="-0.15" dx="0.35" dy="0.575" layer="1" rot="R90"/>
+<smd name="2" x="-1.1125" y="0.35" dx="0.35" dy="0.575" layer="1" rot="R90"/>
+<smd name="1" x="-1.1125" y="0.85" dx="0.35" dy="0.575" layer="1" rot="R90"/>
+<smd name="8" x="1.1125" y="-0.65" dx="0.35" dy="0.575" layer="1" rot="R90"/>
+<smd name="9" x="1.1125" y="-0.15" dx="0.35" dy="0.575" layer="1" rot="R90"/>
+<smd name="10" x="1.1125" y="0.35" dx="0.35" dy="0.575" layer="1" rot="R90"/>
+<smd name="11" x="1.1125" y="0.85" dx="0.35" dy="0.575" layer="1" rot="R90"/>
+<smd name="13" x="0" y="0.9625" dx="0.35" dy="0.575" layer="1"/>
+<smd name="12" x="0.5" y="0.9625" dx="0.35" dy="0.575" layer="1"/>
+<smd name="14" x="-0.5" y="0.9625" dx="0.35" dy="0.575" layer="1"/>
+<text x="0" y="1.846" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
+<circle x="-1.778" y="1.132" radius="0.081021875" width="0.1524" layer="21"/>
+<wire x1="-1.5" y1="1.35" x2="-1.5" y2="-1.15" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.15" x2="1.5" y2="-1.15" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.15" x2="1.5" y2="1.35" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.35" x2="-1.5" y2="1.35" width="0.127" layer="21"/>
+<wire x1="-2.4" y1="2" x2="-2.4" y2="-1.8" width="0.127" layer="39"/>
+<wire x1="-2.4" y1="-1.8" x2="2.4" y2="-1.8" width="0.127" layer="39"/>
+<wire x1="2.4" y1="-1.8" x2="2.4" y2="2" width="0.127" layer="39"/>
+<wire x1="2.4" y1="2" x2="-2.4" y2="2" width="0.127" layer="39"/>
+<rectangle x1="-0.72" y1="-0.37" x2="0.72" y2="0.57" layer="41"/>
 </package>
 </packages>
 <symbols>
@@ -204,24 +208,24 @@
 <text x="0" y="7.62" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="IMU">
-<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<pin name="SDO/SA0" x="-10.16" y="2.54" visible="pad" length="short"/>
-<pin name="SDX" x="-10.16" y="0" visible="pad" length="short"/>
-<pin name="SCX" x="-10.16" y="-2.54" visible="pad" length="short"/>
-<pin name="INT1" x="10.16" y="-5.08" visible="pad" length="short" rot="R180"/>
-<pin name="OCS_AUX" x="10.16" y="0" visible="pad" length="short" rot="R180"/>
-<pin name="SDO_AUX" x="10.16" y="2.54" visible="pad" length="short" rot="R180"/>
-<pin name="INT2" x="10.16" y="-2.54" visible="pad" length="short" rot="R180"/>
-<pin name="VDD" x="-2.54" y="10.16" visible="pad" length="short" rot="R270"/>
-<pin name="VDDIO" x="2.54" y="10.16" visible="pad" length="short" rot="R270"/>
-<pin name="GND" x="0" y="-10.16" visible="pad" length="short" rot="R90"/>
-<pin name="SDA" x="-10.16" y="-5.08" visible="pad" length="short"/>
-<pin name="SCL" x="-10.16" y="5.08" visible="pad" length="short"/>
-<pin name="CS" x="10.16" y="5.08" visible="pad" length="short" rot="R180"/>
-<text x="0" y="15.24" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
+<wire x1="-17.78" y1="10.16" x2="17.78" y2="10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="10.16" x2="17.78" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-7.62" x2="-17.78" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-7.62" x2="-17.78" y2="10.16" width="0.254" layer="94"/>
+<pin name="SDO/SA0" x="-20.32" y="2.54" length="short"/>
+<pin name="SDX" x="-20.32" y="0" length="short"/>
+<pin name="SCX" x="-20.32" y="-2.54" length="short"/>
+<pin name="INT1" x="20.32" y="-5.08" length="short" rot="R180"/>
+<pin name="OCS_AUX" x="20.32" y="0" length="short" rot="R180"/>
+<pin name="SDO_AUX" x="20.32" y="2.54" length="short" rot="R180"/>
+<pin name="INT2" x="20.32" y="-2.54" length="short" rot="R180"/>
+<pin name="VDD" x="-2.54" y="12.7" length="short" rot="R270"/>
+<pin name="VDDIO" x="2.54" y="12.7" length="short" rot="R270"/>
+<pin name="GND" x="0" y="-10.16" length="short" rot="R90"/>
+<pin name="SDA" x="-20.32" y="-5.08" length="short"/>
+<pin name="SCL" x="-20.32" y="5.08" length="short"/>
+<pin name="CS" x="20.32" y="5.08" length="short" rot="R180"/>
+<text x="0" y="17.78" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
