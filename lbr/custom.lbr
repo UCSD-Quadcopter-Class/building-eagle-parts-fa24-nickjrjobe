@@ -126,7 +126,6 @@
 <rectangle x1="-0.2795" y1="0.523" x2="0.2795" y2="1.247" layer="31"/>
 <rectangle x1="-1.2295" y1="-1.4465" x2="-0.6705" y2="-0.7225" layer="31"/>
 <rectangle x1="0.6705" y1="-1.4465" x2="1.2295" y2="-0.7225" layer="31"/>
-<rectangle x1="-4.2295" y1="-1.4465" x2="-3.6705" y2="-0.7225" layer="31"/>
 </package>
 <package name="IMU_LSM6DSO">
 <rectangle x1="-1.5" y1="-1.154" x2="1.5" y2="1.346" layer="42"/>
